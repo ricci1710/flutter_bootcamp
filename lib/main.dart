@@ -1,22 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bootcamp/section7/micard.dart';
 
 // The main function is the starting point for all our Flutter apps.
 void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.blueGrey,
-        appBar: AppBar(
-          title: const Text('I Am Rich'),
-          backgroundColor: Colors.blueGrey[900],
-        ),
-        body: const Center(
-          child: Image(
-            image: AssetImage('images/diamond.png'),
-          ),
-        ),
-      ),
-    ),
-  );
+  runApp(const MiCard());
 }
