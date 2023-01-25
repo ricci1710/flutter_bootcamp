@@ -9,7 +9,12 @@ class MiCard extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: Container(),
+        body: SafeArea(
+          child: Container(
+            color: Colors.white,
+            child: const Text('Hello'),
+          ),
+        ),
       ),
     );
   }
